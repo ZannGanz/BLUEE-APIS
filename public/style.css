@@ -37,10 +37,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#fff;
-    overflow-x: hidden;
-    padding-left: 35rem;
-}
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;}
 
 section{
     min-height: 100vh;
