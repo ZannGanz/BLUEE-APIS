@@ -629,43 +629,4 @@ res.json({
           result 
 })})})
 
-router.get('/pubg', async (req, res, next) => {
-          var apikey = req.query.apikey
-       	var text = req.query.text
-       	if(!apikey) return res.sendFile(__path + '/docs/403.html')
-       if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})      
-         if(listkey.includes(apikey)){
-       try {
-            request.post({
-                url: "https://photooxy.com/battlegrounds/make-wallpaper-battlegrounds-logo-text-146.html",
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `text_2=${text}&login=OK`,
-                }, (e,r,b) => {
-                    if (!e) {
-                        $ = cheerio.load(b)
-                        $(".thumbnail").find("img").each(function() {
-                            blueyzz = $(this).attr("src")
-                            var result = "https://photooxy.com/"+blueyzz
-                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
-                                .then(response => response.json())
-                                .then(data => {
-                                    var uerel = data.data.url,
-                                        delete_url = data.data.delete_url;
-                                        res.json({
-                                            result:{
-                                                url:uerel,
-                                            },
-                                        	message: `Ok`,
-											status: `Success`,
-											maintanied_by: `BlueyZz`
-                                        })
-                                })
-                        })
-                    }
-                })
-         } 
-} 
-})
 module.exports = router
