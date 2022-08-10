@@ -663,7 +663,8 @@ if (!text) return res.json({ status : false, creator : `${creator}`, message : "
                                 })
                         })
                 })
-         } 
+      
+}}   } 
 } 
 })
 module.exports = router
