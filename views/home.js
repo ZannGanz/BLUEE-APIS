@@ -1,126 +1,97 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Situs web REST API yang menyediakan berbagai macam fitur untuk mengembangkan aplikasimu.">
-    <meta name="robots" content="archive, follow, imageindex, index, odp, snippet, translate">
-    <meta name="author" content="zeeoneofc">
-    <title>Alphabot - REST APIs</title>
-    <meta property="og:site_name" name="og:site_name" content="Alphabot APIs">
-    <meta property="og:title" name="og:title" content="Alphabot - REST APIs">
-    <meta property="og:url" name="og:url" content="https://api-alphabot.herokuapp.com/">
-    <meta property="og:image" name="og:image" content="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <meta property="og:description" name="og:description" content="Situs web REST API yang menyediakan berbagai macam fitur untuk mengembangkan aplikasimu.">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <link href="../css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
-    <meta name="msapplication-TileImage" content="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg">
-    <meta name="theme-color" content="#ffffff"><style>html, body {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  background-color: #ffffff;
-  height: 100%;
-  -webkit-font-smoothing: antialiased; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEEYZZ API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="user">
+        <img src="foto.jpg" alt="">
+        <h3 class="name">BLUEE API</h3>
+        <p class="post">For WhatsApp</p>
+    </div>    
+</header>
+<div id="menu" class="fas fa-bars"></div>
+<section class="home" id="home">
+    <h3>WELCOME!</h3>
+    <h1>Gw <span>Bluee</span></h1>
+    <p>Halo Banh , Selamat Datang Di Bluee API</p>        
+</section>
+<section class="contact" id="contact">
+<h1 class="heading"> <span>WALL</span>PAPER</h1>
+<li><a href="/api/wallml?apikey=Bluee_Lolot"><button class="btn">wallml</button></a></li>
+    <li><a href="/api/wallrandom?apikey=Bluee_Lolot"><button class="btn">wallrandom</button></a></li>
+    <li><a href="/api/wallcode?apikey=Bluee_Lolot"><button class="btn">wallcode</button></a></li>
+    <li><a href="/api/wallneon?apikey=Bluee_lolot"><button class="btn">wallneon</button></a></li>
+    <li><a href="/api/wallpubg?apikey=Bluee_Lolot"><button class="btn">wallpubg</button></a></li>
+<h1 class="heading"> <span>TEXT</span>PRO</h1>
+    <li><a href="/api/circuit?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">circuit</button></a></li>
+    <li><a href="/api/sketch?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">sketch</button></a></li>
+    <li><a href="/api/halloween?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">halloween</button></a></li>
+    <li><a href="/api/rainbow?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">rainbow</button></a></li>
+    <li><a href="/api/scfi?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">scfi</button></a></li>
+    <li><a href="/api/blue?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">blue</button></a></li>
+    <li><a href="/api/juice?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">juice</button></a></li>
+    <li><a href="/api/purple?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">purple</button></a></li>
+    <li><a href="/api/toxic?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">toxic</button></a></li>
+    <li><a href="/api/peridot?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">peridot</button></a></li>
+    <li><a href="/api/metal?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">metal</button></a></li>
+    <li><a href="/api/realistic?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">realistic</button></a></li>
+    <li><a href="/api/impressive?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">impressive</button></a></li>
+    <li><a href="/api/cracked?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">cracked</button></a></li>
+    <li><a href="/api/magma?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">magma</button></a></li>
+    <li><a href="/api/thunder?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">thunder</button></a></li>
+    <li><a href="/api/berry?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">berry</button></a></li>
+    <li><a href="/api/transformer?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">transformer</button></a></li>
+    <li><a href="/api/horror?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">horror</button></a></li>
+    <li><a href="/api/metallic?text=yourtext&apikey=YOUR_APIKEY"><button class="btn">metallic</button></a></li>
+<h1 class="heading"> <span>RAN</span>DOM</h1>
+    <li><a href="/api/jumlahangka?text=82732&apikey=YOUR_APIKEY"><button class="btn">jumlahangka</button></a></li>
+    <li><a href="/api/jumlahhuruf?text=wwkaisv&apikey=YOUR_APIKEY"><button class="btn">jumlahhuruf</button></a></li>
+    <li><a href="/api/besarkecil?text=osjwux&apikey=YOUR_APIKEY"><button class="btn">besarkecil</button></a></li>
+    <li><a href="/api/resepmasakan?text=bakso&apikey=YOUR_APIKEY"><button class="btn">resepmasakan</button></a></li>
+    <li><a href="/api/katajago?text=cantik&apikey=YOUR_APIKEY"><button class="btn">katajago</button></a></li>
+    <li><a href="/api/artimimpi?text=ular&apikey=YOUR_APIKEY"><button class="btn">artimimpi</button></a></li>
+    <li><a href="/api/artinama?text=nayla&apikey=YOUR_APIKEY"><button class="btn">artinama</button></a></li>
+    <li><a href="/api/kapital?text=osiwmsp&apikey=YOUR_APIKEY"><button class="btn">kapital</button></a></li>
+    <li><a href="/api/halah?text=halo&apikey=YOUR_APIKEY"><button class="btn">halah</button></a></li>
+    <li><a href="/api/huluh?text=halo&apikey=YOUR_APIKEY"><button class="btn">huluh</button></a></li>
+    <li><a href="/api/heleh?text=hallo&apikey=YOUR_APIKEY"><button class="btn">heleh</button></a></li>
+    <li><a href="/api/bilangangka?text=9273202&apikey=YOUR_APIKEY"><button class="btn">bilangangka</button></a></li>
+    <li><a href="/api/balikangka?text=0274101&apikey=YOUR_APIKEY"><button class="btn">balikangka</button></a></li>
+    <li><a href="/api/balikhuruf?text=jaheoxlam&apikey=YOUR_APIKEY"><button class="btn">balikhuruf</button></a></li>
+<h1 class="heading"> <span>CAN</span>VAS</h1>
+    <li><a href="/api/sadcat?text=Udin&apikey=YOUR_APIKEY"><button class="btn">sadcat</button></a></li>
+    <li><a href="/api/facts?text=Udin&apikey=YOUR_APIKEY"><button class="btn">facts</button></a></li>
+    <li><a href="/api/pikachu?text=Udin&apikey=YOUR_APIKEY"><button class="btn">pikachu</button></a></li>
+    <li><a href="/api/biden?text=Udin&apikey=YOUR_APIKEY"><button class="btn">biden</button></a></li>
+    <li><a href="/api/oogway?text=Udin&apikey=YOUR_APIKEY"><button class="btn">oogway</button></a></li>
+    <li><a href="/api/gun?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">gun</button></a></li>
+    <li><a href="/api/alert?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">alert</button></a></li>
+    <li><a href="/api/greyscale?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">greyscale</button></a></li>
+    <li><a href="/api/ad?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">ad</button></a></li>
+    <li><a href="/api/blur?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">blur</button></a></li>
+    <li><a href="/api/uncover?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">uncover</button></a></li>
+    <li><a href="/api/invert?url=https://w0.peakpx.com/wallpaper/11/65/HD-wallpaper-anime-girl-loli-cute-brown-hair-twintails-anime.jpg&apikey=YOUR_APIKEY"><button class="btn">invert</button></a></li>
+<h1 class="heading"> <span>GAM</span>ES</h1>
+    <li><a href="/api/tebaklirik?apikey=YOUR_APIKEY"><button class="btn">tebaklirik</button></a></li>
+    <li><a href="/api/tebakkimia?apikey=YOUR_APIKEY"><button class="btn">tebakkimia</button></a></li>
+    <li><a href="/api/tebakjenaka?apikey=YOUR_APIKEY"><button class="btn">tebakjenaka</button></a></li>
+    <li><a href="/api/tebakbendera?apikey=YOUR_APIKEY"><button class="btn">tebakbendera</button></a></li>
+    <li><a href="/api/tebakgambar?apikey=YOUR_APIKEY"><button class="btn">tebakgambar</button></a></li>
+    <li><a href="/api/caklontong?apikey=YOUR_APIKEY"><button class="btn">caklontong</button></a></li>
+<h1 class="heading"> <span>OTH</span>ERS</h1>
+    <li><a href="/api/ytdownload?url=&apikey=YOUR_APIKEY"><button class="btn">Youtube Download</button></a></li>
+    <li><a href="/api/ytsearch?text=BlueyZz&apikey=YOUR_APIKEY"><button class="btn">Youtube Search</button></a></li>
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.message {
-  text-align: center;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 20px;
-  max-width: 450px; }
-
-.message__title {
-  font-size: 22px;
-  font-weight: 100;
-  margin-top: 15px;
-  color: #FFFFFF;
-  margin-bottom: 8px; }
-
-p {
-  -webkit-margin-after: 0px;
-  -webkit-margin-before: 0px;
-  font-size: 15px;
-  color: #FFFFFF;
-  line-height: 21px;
-  margin-bottom: 4px; }
-
-.btn {
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 4px;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #FFFFFF;
-  border: 1px solid #8B008B; }
-
-.hk-logo, .app-icon {
-  fill: #FFFFFF; }
-
-.info {
-  fill: #FFFFFF; }
-
-body.friendly {
-  background-image: url("https://telegra.ph/file/9530e0cd7c93f6843d673.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100%;
-
-}
-body.friendly .message__title {
-  color: #FFFFFF; }
-
-body.friendly p {
-  color: rgba(255, 255, 255, 0.6); }
-
-body.friendly .hk-logo, body.friendly .app-icon {
-  fill: rgba(255, 255, 255, 0.9); }
-
-body.friendly .info {
-  fill: rgba(255, 255, 255, 0.9); }
-
-body.friendly .btn {
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.9); }
-
-.info_area {
-  position: fixed;
-  right: 12px;
-  bottom: 12px; }
-
-.logo {
-  position: fixed;
-  left: -100px;
-  bottom: -60px; }
-</style> <base target="_parent"> </head> <body class="friendly"> <div class="spacer"></div> <div class="message"> <div class="message__title text-info">Alphabot REST API</div> <a href="https://blueyz-apis.herokuapp.com/docs" class="btn-success btn">Documentation</a> </div> <div class="logo"><img width="300" height="200" src="https://telegra.ph/file/9530e0cd7c93f6843d673.jpg"></div> <script>
-f=
-_=>navigator.getBattery().then(b=>alert('Hi selamat datang di rest api alphabot'))
-f()
-</script></body></html>
-
+     
+     <p>© By BlueyZz</p>      
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
