@@ -4,25 +4,12 @@ var express = require('express');
 
 apikey = "blueejelek"
 
-var creator = 'BlueyZz'
-var axios = require('axios');
-var qs = require('qs');
-var ytdl = require('ytdl-core');
-var ytpl = require('ytpl');
-var secure = require('ssl-express-www');
-var cors = require('cors');
-var scrapeYt = require("scrape-yt");
 var fetch = require('node-fetch');
 var cheerio = require('cheerio');
 var request = require('request');
-var fs = require('fs');
 var router  = express.Router();
-nottext: {message: 'MASUKKAN QUERY' }
-notapikey: {message: 'APIKEY WRONG' }
-
-var { fetchJson } = require(__path + '/lib/fetcher.js');
-var options = require(__path + '/lib/options.js');
-var { getBuffer } = require(__path + '/lib/function.js');
+nottext: {message: 'MASUKKAN TEXT' }
+notapikey: {message: 'APIKEY SALAH' }
 
 // WALLPAPER
 router.get('/wallml', async (req, res, next) => {  
@@ -603,7 +590,7 @@ router.get('/ytmp4', async (req, res, next) => {
 var apikeyInput = req.query.apikey
 var url = req.query.url
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+if (!url) return res.json({ status : false, message : "masukan parameter url"})
 if(listkey.includes(apikey)){
 fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/ytv?url=${url}`))
 .then(response => response.json())
@@ -618,7 +605,7 @@ router.get('/ytmp3', async (req, res, next) => {
 var apikeyInput = req.query.apikey
 var url = req.query.url
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
+if (!url) return res.json({ status : false, message : "masukan parameter url"})
 if(listkey.includes(apikey)){
 fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/yta?url=${url}`))
 .then(response => response.json())
