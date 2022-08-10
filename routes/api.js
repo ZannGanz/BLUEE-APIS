@@ -11,23 +11,6 @@ var router  = express.Router();
 nottext: {message: 'MASUKKAN TEXT' }
 notapikey: {message: 'APIKEY SALAH' }
 
-var len = 15
-        var arr = '123456789abcdefghijklmnopqrstuvwxyz'
-        var random = '';
-
-        for (var i = len; i > 0; i--) {
-            random += arr[Math.floor(Math.random() * arr.length)];
-        }
-
-        var lenn = 5
-        var randomlagi = '';
-
-        for (var i = lenn; i > 0; i--) {
-            randomlagi += arr[Math.floor(Math.random() * arr.length)];
-        }
-
-        var randomTextNumber = random+randomlagi+'---------Apriliya-Putri-Fatmawati'+'LOLI--KILLERS';
-
 // WALLPAPER
 router.get('/wallml', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
@@ -646,41 +629,4 @@ res.json({
           result 
 })})})
 
-router.get('/blackstyle', async (req, res, next) => {
-var apikey = req.query.apikey
-var text = req.query.text
-if(!apikey) return res.json({message: 'APIKEY SALAH' })
-if (!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})      
-  try {
-  request.post({
-                url: "https://photooxy.com/logo-and-text-effects/3d-wood-text-black-style-182.html",
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `text_1=${text}&login=OK`,
-                }, (e,r,b) => {
-                    if (!e) {
-                        $ = cheerio.load(b)
-                        $(".thumbnail").find("img").each(function() {
-                            h = $(this).attr("src")
-                            var result = "https://photooxy.com/"+h
-                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
-                                .then(response => response.json())
-                                .then(data => {
-                                    var urlnya = data.data.url,
-                                        delete_url = data.data.delete_url;
-                                        res.json({
-                                            result:{
-                                                url:urlnya,
-                                            },
-                                        	message: `Ok`,
-											status: `Success`,
-											maintanied_by: `${creator}`
-                                        })
-                                })
-                        })
-                })
-        } 
-} 
-})
 module.exports = router
