@@ -11,6 +11,23 @@ var router  = express.Router();
 nottext: {message: 'MASUKKAN TEXT' }
 notapikey: {message: 'APIKEY SALAH' }
 
+var len = 15
+        var arr = '123456789abcdefghijklmnopqrstuvwxyz'
+        var random = '';
+
+        for (var i = len; i > 0; i--) {
+            random += arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        var lenn = 5
+        var randomlagi = '';
+
+        for (var i = lenn; i > 0; i--) {
+            randomlagi += arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        var randomTextNumber = random+randomlagi+'---------Apriliya-Putri-Fatmawati'+'LOLI--KILLERS';
+
 // WALLPAPER
 router.get('/wallml', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
@@ -663,8 +680,7 @@ if (!text) return res.json({ status : false, creator : `${creator}`, message : "
                                 })
                         })
                 })
-      
-}}   } 
+        } 
 } 
 })
 module.exports = router
