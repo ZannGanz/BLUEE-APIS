@@ -20,6 +20,6 @@ router.get('/info', (req, res) => {
             github : 'https:\/\/github.com\/bluziMC',
         }
     }
-    res.json(config)
+    res.json(info)
 })
 module.exports = router
