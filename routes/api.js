@@ -618,6 +618,16 @@ fetch(encodeURI(`https://myselfff.herokuapp.com/docs/search/ytsearch?query=${tex
 .then(data => { var result = data;
 res.json({ result })})})
 
-
+router.get('/asupan', async (req, res, next) => {
+var apikey = req.query.apikey
+if(!apikey) return res.json({message: 'APIKEY SALAH' }
+fetch(encodeURI(`https://github.com/ZannGanz/BlueyZz/blob/0b9a6972cbbdb3441ccd5f893840b0d8188724c5/Asupan/asupan.json`))
+.then(response => response.json())
+.then(async data => {
+var result = data[Math.floor(Math.random() * data.length)];
+var buffer = result.url;
+data = await fetch(buffer).then(v => v.buffer())
+await fs.writeFileSync(__path +'/tmp/chika.jpg', data)
+res.sendFile(__path+'/tmp/chika.jpg')
 
 module.exports = router
