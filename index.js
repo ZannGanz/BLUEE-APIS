@@ -5,8 +5,7 @@ const PORT = process.env.PORT || 8080 || 5000 || 3000
 
 var mainrouter = require('./routes/main'),
     apirouter = require('./routes/api')
-    homedocs = require('./docs/home')
-
+   
 var app = express()
 app.enable('trust proxy');
 app.set("json spaces",2)
@@ -16,7 +15,6 @@ app.use(express.static("public"))
 
 app.use('/', mainrouter)
 app.use('/api', apirouter)
-app.use('/docs', homedocs)
 
 app.listen(PORT, () => {
     console.log("Server running on port " + PORT)
