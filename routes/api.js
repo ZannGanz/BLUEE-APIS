@@ -591,30 +591,22 @@ var apikeyInput = req.query.apikey
 var url = req.query.url
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
 if (!url) return res.json({ status : false, message : "masukan parameter url"})
-if(listkey.includes(apikey)){
 fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/ytv?url=${url}`))
 .then(response => response.json())
 .then(data => {
 var result = data;
-res.json({
-     author: 'BlueyZz',
-     result
-     })})})
+res.json({ result })})})
 
 router.get('/ytmp3', async (req, res, next) => {
 var apikeyInput = req.query.apikey
 var url = req.query.url
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
 if (!url) return res.json({ status : false, message : "masukan parameter url"})
-if(listkey.includes(apikey)){
 fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/yta?url=${url}`))
 .then(response => response.json())
 .then(data => {
 var result = data;
-res.json({
-     author: 'BlueyZz',
-     result
-     })})})
+res.json({ result })})})
 
 router.get('/ytsearch', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
